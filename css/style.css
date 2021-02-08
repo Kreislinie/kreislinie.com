@@ -1,0 +1,211 @@
+body {
+ background: #fff;
+ margin: 0;
+ overflow: hidden;
+}
+
+.wrap {
+  display: grid;
+  justify-content: center;
+  height: 100vh;
+	align-content: center;
+}
+
+.divider {
+	height: 65px;
+}
+
+/* -------------------------------------------- 
+ * Typo 
+ * -------------------------------------------- */
+
+a, h5, p {
+ font-family:Raleway,sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+/* -------------------------------------------- 
+ * Navigation 
+ * -------------------------------------------- */
+
+nav {
+	text-align: right;
+	margin: 38px 55px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+nav a {
+	display: block;
+	margin-bottom: 12px;
+}
+
+
+
+h5 {
+ font-weight:700;
+ font-style:normal;
+ font-size:1.2em
+}
+
+#simon-logo-head {
+ position:absolute;
+ z-index:5;
+ top: 0;
+}
+#simon-logo-head:after,
+#simon-logo-head:before {
+ content:none
+}
+
+.simon-line-hover {
+transform: rotateZ(-45deg) scale(1, 1)!important;
+}
+
+#simon-css-logo-head {
+ height:30px;
+ width:30px;
+ margin:31px
+}
+@media screen and (max-width:450px) {
+ #simon-css-logo-head {
+  height:30px;
+  width:30px
+ }
+}
+#simon-circle-head {
+ border-radius:50%;
+ width:100%;
+ height:100%;
+ border:2px solid #000
+}
+#simon-line-head {
+ height:2px;
+ width:140%;
+ background-color:#000;
+ transform:rotateZ(-45deg) scale(0,1);
+ margin:33% 0 0 -32%;
+ transition: transform .5s;
+}
+@media screen and (max-width:950px) {
+ #simon-line-head {
+  transform:rotateZ(-45deg) scale(1,1)!important
+ }
+}
+
+#website-name {
+ position:absolute;
+ top: 0;
+ padding:38px 0 0 90px;
+ width: 115px
+}
+@media screen and (max-width:950px) {
+ #website-name {
+  display:none
+ }
+}
+
+
+
+
+
+#simon-css-logo-home {
+ height: 140px;
+ width: 140px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ margin-top: -107px;
+ margin-left: -70px;
+}
+
+#simon-circle-home {
+ opacity: 0;
+ border-radius: 50%;
+ width: 100%;
+ height: 100%;
+ border: 5px solid #000;
+ animation: fadeCircle .5s 1;
+ animation-delay: .7s;
+ animation-fill-mode: forwards;
+}
+
+@keyframes fadeCircle {
+ 0% {
+  opacity: 0;
+ }
+ 100% {
+  opacity: 1;
+ }
+}
+
+#simon-line-home {
+ animation: stretchLine .8s 1;
+ animation-delay: 1s;
+ animation-fill-mode:forwards;
+ animation-timing-function:cubic-bezier(.4,.08,.32,.99)
+}
+@keyframes stretchLine {
+ 0% {
+  transform:rotateZ(-45deg) scale(0,1);
+  height:5px;
+  width:118%;
+  background-color:#000;
+  margin:39% 0 0 -18%
+ }
+ 100% {
+  transform:rotateZ(-45deg) scale(1,1);
+  height:5px;
+  width:118%;
+  background-color:#000;
+  margin:39% 0 0 -18%
+ }
+}
+
+#start-title {
+	position: absolute;
+	font-size: 1.8em;
+	opacity: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-46%,-50%);
+	margin-top: 82px;
+	animation: fadeCircle .5s 1;
+	animation-delay: .7s;
+	animation-fill-mode: forwards;
+	letter-spacing: 3px;
+}
+
+#client-login {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 15px 25px;
+	color: rgba(0, 0, 0, .4);
+	transition: color 0.5s;
+}
+
+#client-login:hover {
+	color: black;
+}
+
+/* -------------------------------------------- 
+ * Projects 
+ * -------------------------------------------- */
+
+	.project a {
+		font-size: 0.8em;
+	}
+
+	.project a, h5 {
+		margin: 0;
+	}
+
+	.project p {
+margin: 0px 0 15px 0px;
+}
